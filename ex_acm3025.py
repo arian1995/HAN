@@ -54,7 +54,7 @@ def sample_mask(idx, l):
     return np.array(mask, dtype=np.bool)
 
 
-def load_data_dblp(path='/home/jhy/allGAT/acm_hetesim/ACM3025.mat'):
+def load_data_dblp(path='/data/acm/ACM.mat'):
     data = sio.loadmat(path)
     truelabels, truefeatures = data['label'], data['feature'].astype(float)
     N = truefeatures.shape[0]
