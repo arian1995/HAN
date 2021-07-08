@@ -10,7 +10,7 @@ import os
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "1,2,3"
 
-config = tf.ConfigProto()
+config = tf.compat.v1.ConfigProto()
 config.gpu_options.allow_growth = True
 
 dataset = 'acm'
